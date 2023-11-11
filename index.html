@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Nft Ring</title>
   </head>
@@ -343,7 +347,48 @@
       </div>
     </section>
 
-    <section class="section__news"></section>
+    <section class="section__news">
+      <div class="news__header">
+        <div class="news__header_text">
+          <h2 class="left__align">Now With More News and Blogs</h2>
+          <h3 class="left__align">
+            This NFT website is a website that features buying and selling, news
+            and <br />
+            blogs. Designed with a minimalist and informative concept
+          </h3>
+        </div>
+        <button class="news__button">See All</button>
+      </div>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="./img/sliderImg/1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/sliderImg/2.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/sliderImg/3.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/sliderImg/4.png" alt="" />
+          </div>
+
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
 
     <section class="section__category section">
       <h2>Browse by category</h2>
@@ -485,8 +530,90 @@
       />
     </section>
 
-    <section class="section__register">
-      
+    <section class="section__register section">
+      <h2 class="left__align">Stay in the loop</h2>
+      <h3 class="left__align">
+        Join our mailing list to stay in the loop with <br />
+        our newest feature releases, NFT drops, and <br />
+        tips and tricks for navigating NFT.Ring
+      </h3>
+      <div class="register__wrapper">
+        <input type="email" placeholder="Your Email Address" />
+        <button class="primary__button" type="submit">Register</button>
+      </div>
     </section>
+
+    <footer>
+      <div class="footer__description">
+        <div class="header__logo">
+          <div class="logo__img"></div>
+          <div class="logo__text">NFT.Ring</div>
+        </div>
+        <div class="footer__description_text">
+          The world’s first and largest digital <br />
+          marketplace for crypto collectibles <br />
+          and non-fungible tokens (NFTs). <br />
+          Buy, sell, and discover exclusive <br />
+          digital assets.
+        </div>
+      </div>
+      <div class="footer__links_group">
+        <span class="links__group_name">Marketplace</span>
+        <a href="#" class="footer__link">All NFTs</a>
+        <a href="#" class="footer__link">New</a>
+        <a href="#" class="footer__link">Art</a>
+        <a href="#" class="footer__link">Music</a>
+        <a href="#" class="footer__link">Domain Names</a>
+        <a href="#" class="footer__link">Virtual Worlds</a>
+        <a href="#" class="footer__link">Trading Cards</a>
+        <a href="#" class="footer__link">Collectibles</a>
+        <a href="#" class="footer__link">Sports</a>
+        <a href="#" class="footer__link">Utility</a>
+      </div>
+      <div class="footer__links_group">
+        <span class="links__group_name">My Account</span>
+        <a href="#" class="footer__link">My Profile</a>
+        <a href="#" class="footer__link">My Collections</a>
+        <a href="#" class="footer__link">My Favorites </a>
+        <a href="#" class="footer__link">My Account Settings</a>
+        <a href="#" class="footer__link">About</a>
+        <a href="#" class="footer__link">Careers</a>
+      </div>
+      <div class="footer__links_group">
+        <span class="links__group_name">Resources</span>
+        <a href="#" class="footer__link">Help Center</a>
+        <a href="#" class="footer__link">Partners</a>
+        <a href="#" class="footer__link">Suggestions</a>
+        <a href="#" class="footer__link">Discord Community</a>
+        <a href="#" class="footer__link">Blog</a>
+        <a href="#" class="footer__link">Docs</a>
+        <a href="#" class="footer__link">Newsletter</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "vertical",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
