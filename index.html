@@ -347,7 +347,7 @@
       </div>
     </section>
 
-    <section class="section__news">
+    <section class="section__news section">
       <div class="news__header">
         <div class="news__header_text">
           <h2 class="left__align">Now With More News and Blogs</h2>
@@ -370,23 +370,21 @@
             <img src="./img/sliderImg/2.png" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="./img/sliderImg/3.png" alt="" />
+            <img src="./img/categoryImg/1.png" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="./img/sliderImg/4.png" alt="" />
+            <img src="./img/categoryImg/2.png" alt="" />
           </div>
-
-          ...
         </div>
         <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div> -->
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-button-prev"></div> -->
+        <!-- <div class="swiper-button-next"></div> -->
 
         <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
+        <!-- <div class="swiper-scrollbar"></div> -->
       </div>
     </section>
 
@@ -595,9 +593,15 @@
     <script>
       const swiper = new Swiper(".swiper", {
         // Optional parameters
-        direction: "vertical",
+        direction: "horizontal",
         loop: true,
+        allowTouchMove: true,
+        grabCursor: true,
 
+        effect: "cube",
+        cubeEffect: {
+          slideShadows: false,
+        },
         // If we need pagination
         pagination: {
           el: ".swiper-pagination",
@@ -612,6 +616,9 @@
         // And if we need scrollbar
         scrollbar: {
           el: ".swiper-scrollbar",
+        },
+        autoplay: {
+          delay: 3000,
         },
       });
     </script>
